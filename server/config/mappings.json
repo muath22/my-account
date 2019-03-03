@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "alert_notification_name": {
+    "searchPatterns": [
+      "user-provided:new-app-node-js-alertnotificati-1551299004146:name",
+      "cloudfoundry:$['alertnotification'][0].credentials.name",
+      "env:service_alert_notification:$.name",
+      "env:alert_notification_name",
+      "file:/server/localdev-config.json:$.alert_notification_name"
+    ]
+  },
+  "alert_notification": {
+    "credentials": {
+      "searchPatterns": [
+        "user-provided:new-app-node-js-alertnotificati-1551299004146:url",
+        "cloudfoundry:alert_notification",
+        "env:alert_notification_credentials",
+        "file:/server/localdev-config.json:alert_notification_credentials"
+      ]
+    }
+  },
+  "alert_notification_password": {
+    "searchPatterns": [
+      "user-provided:new-app-node-js-alertnotificati-1551299004146:password",
+      "cloudfoundry:$['alertnotification'][0].credentials.password",
+      "env:service_alert_notification:$.password",
+      "env:alert_notification_password",
+      "file:/server/localdev-config.json:$.alert_notification_password"
+    ]
+  },
+  "alert_notification_url": {
+    "searchPatterns": [
+      "user-provided:new-app-node-js-alertnotificati-1551299004146:url",
+      "cloudfoundry:$['alertnotification'][0].credentials.url",
+      "env:service_alert_notification:$.url",
+      "env:alert_notification_url",
+      "file:/server/localdev-config.json:$.alert_notification_url"
+    ]
+  }
+}
